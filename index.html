@@ -22,6 +22,11 @@
                 <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <button class="burger-menu" id="burger-menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
         </nav>
     </header>
 
@@ -182,6 +187,23 @@
                 <div class="pillars-grid">
                     <!-- Web Development Pillar -->
                     <div class="pillar-card web-pillar">
+                        <div class="pillar-image">
+                            <svg width="100%" height="120" viewBox="0 0 300 120" fill="none">
+                                <rect width="300" height="120" rx="10" fill="rgba(255, 107, 53, 0.05)"/>
+                                <rect x="20" y="20" width="260" height="80" rx="8" fill="rgba(0, 0, 0, 0.3)" stroke="rgba(255, 107, 53, 0.3)" stroke-width="1"/>
+                                <!-- Browser window -->
+                                <circle cx="35" cy="35" r="3" fill="#ff6b35"/>
+                                <circle cx="45" cy="35" r="3" fill="#00ff88"/>
+                                <circle cx="55" cy="35" r="3" fill="#8b5cf6"/>
+                                <!-- Code lines -->
+                                <rect x="30" y="50" width="80" height="4" rx="2" fill="#ff6b35"/>
+                                <rect x="30" y="60" width="120" height="4" rx="2" fill="rgba(255, 255, 255, 0.4)"/>
+                                <rect x="30" y="70" width="100" height="4" rx="2" fill="rgba(255, 255, 255, 0.3)"/>
+                                <rect x="30" y="80" width="140" height="4" rx="2" fill="rgba(255, 255, 255, 0.2)"/>
+                                <!-- Mobile preview -->
+                                <rect x="200" y="30" width="60" height="60" rx="8" fill="rgba(255, 107, 53, 0.1)" stroke="rgba(255, 107, 53, 0.5)" stroke-width="1"/>
+                            </svg>
+                        </div>
                         <div class="pillar-icon">
                             <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                                 <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/>
@@ -204,6 +226,28 @@
 
                     <!-- Trading Pillar -->
                     <div class="pillar-card trading-pillar">
+                        <div class="pillar-image">
+                            <svg width="100%" height="120" viewBox="0 0 300 120" fill="none">
+                                <rect width="300" height="120" rx="10" fill="rgba(0, 255, 136, 0.05)"/>
+                                <!-- Trading chart background -->
+                                <rect x="20" y="20" width="260" height="80" rx="8" fill="rgba(0, 0, 0, 0.2)" stroke="rgba(0, 255, 136, 0.3)" stroke-width="1"/>
+                                <!-- Candlestick chart -->
+                                <rect x="40" y="40" width="6" height="30" fill="#00ff88"/>
+                                <rect x="55" y="50" width="6" height="20" fill="#ff4444"/>
+                                <rect x="70" y="35" width="6" height="35" fill="#00ff88"/>
+                                <rect x="85" y="45" width="6" height="25" fill="#00ff88"/>
+                                <rect x="100" y="55" width="6" height="15" fill="#ff4444"/>
+                                <rect x="115" y="30" width="6" height="40" fill="#00ff88"/>
+                                <rect x="130" y="40" width="6" height="30" fill="#00ff88"/>
+                                <!-- Trend line -->
+                                <path d="M40 65 L60 55 L80 45 L100 40 L120 35 L140 32" stroke="#ff6b35" stroke-width="2" fill="none"/>
+                                <!-- Statistics panel -->
+                                <rect x="180" y="30" width="80" height="50" rx="5" fill="rgba(255, 107, 53, 0.1)" stroke="rgba(255, 107, 53, 0.3)" stroke-width="1"/>
+                                <text x="185" y="45" font-family="monospace" font-size="8" fill="#00ff88">+24.5%</text>
+                                <text x="185" y="55" font-family="monospace" font-size="6" fill="#cccccc">ROI</text>
+                                <text x="185" y="70" font-family="monospace" font-size="8" fill="#ff6b35">€125K</text>
+                            </svg>
+                        </div>
                         <div class="pillar-icon">
                             <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                                 <path d="M3 3l18 18M9 9l10.5-10.5M21 3l-16 16M12 12l8.5-8.5"/>
@@ -226,6 +270,29 @@
 
                     <!-- Respect Brand Pillar -->
                     <div class="pillar-card respect-pillar">
+                        <div class="pillar-image">
+                            <svg width="100%" height="120" viewBox="0 0 300 120" fill="none">
+                                <rect width="300" height="120" rx="10" fill="rgba(139, 92, 246, 0.05)"/>
+                                <!-- Brand elements -->
+                                <rect x="20" y="20" width="260" height="80" rx="8" fill="rgba(0, 0, 0, 0.2)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+                                <!-- Central respect tag -->
+                                <text x="150" y="55" font-family="monospace" font-size="16" fill="#8b5cf6" text-anchor="middle">&lt;respect/&gt;</text>
+                                <!-- Values around -->
+                                <circle cx="60" cy="40" r="15" fill="rgba(139, 92, 246, 0.1)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+                                <text x="60" y="45" font-family="sans-serif" font-size="8" fill="#8b5cf6" text-anchor="middle">Code</text>
+                                <circle cx="240" cy="40" r="15" fill="rgba(139, 92, 246, 0.1)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+                                <text x="240" y="45" font-family="sans-serif" font-size="8" fill="#8b5cf6" text-anchor="middle">Time</text>
+                                <circle cx="60" cy="80" r="15" fill="rgba(139, 92, 246, 0.1)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+                                <text x="60" y="85" font-family="sans-serif" font-size="8" fill="#8b5cf6" text-anchor="middle">Client</text>
+                                <circle cx="240" cy="80" r="15" fill="rgba(139, 92, 246, 0.1)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+                                <text x="240" y="85" font-family="sans-serif" font-size="8" fill="#8b5cf6" text-anchor="middle">Ethics</text>
+                                <!-- Connecting lines -->
+                                <line x1="75" y1="40" x2="135" y2="50" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+                                <line x1="225" y1="40" x2="165" y2="50" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+                                <line x1="75" y1="80" x2="135" y2="60" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+                                <line x1="225" y1="80" x2="165" y2="60" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+                            </svg>
+                        </div>
                         <div class="pillar-icon">
                             <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
@@ -244,6 +311,97 @@
                             <li>Innovation responsable</li>
                         </ul>
                         <a href="respect.html" class="pillar-cta">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2 class="contact-title">Prêt à commencer votre projet ?</h2>
+                        <p class="contact-description">
+                            Contactez-nous pour discuter de vos besoins et obtenir un devis personnalisé. 
+                            Nous vous répondrons dans les 24 heures.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>contact@codecapital.fr</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📱</div>
+                                <div>
+                                    <h4>Téléphone</h4>
+                                    <p>+33 1 23 45 67 89</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">⏱️</div>
+                                <div>
+                                    <h4>Délai de réponse</h4>
+                                    <p>Moins de 24h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Adresse email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Entreprise</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service souhaité</label>
+                                <select id="service" name="service">
+                                    <option value="">Sélectionnez un service</option>
+                                    <option value="web">Développement Web</option>
+                                    <option value="trading">Trading & Analyse</option>
+                                    <option value="respect">Stratégie <respect/></option>
+                                    <option value="conseil">Conseil personnalisé</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Budget approximatif</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Sélectionnez une fourchette</option>
+                                    <option value="5k-15k">5 000€ - 15 000€</option>
+                                    <option value="15k-30k">15 000€ - 30 000€</option>
+                                    <option value="30k-50k">30 000€ - 50 000€</option>
+                                    <option value="50k+">Plus de 50 000€</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Décrivez votre projet *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Parlez-nous de votre projet, vos objectifs, et vos attentes..."></textarea>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter" id="newsletter">
+                                    <span class="checkmark"></span>
+                                    Je souhaite recevoir des informations sur vos services
+                                </label>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <span>Envoyer ma demande</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -289,5 +447,63 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Burger menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const burgerMenu = document.getElementById('burger-menu');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (burgerMenu && navMenu) {
+                burgerMenu.addEventListener('click', function() {
+                    burgerMenu.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+                
+                // Close menu when clicking on a link
+                const navLinks = document.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        burgerMenu.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!burgerMenu.contains(event.target) && !navMenu.contains(event.target)) {
+                        burgerMenu.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    }
+                });
+            }
+            
+            // Contact form handling
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(contactForm);
+                    const data = Object.fromEntries(formData);
+                    
+                    // Show success message
+                    const submitBtn = contactForm.querySelector('.submit-btn');
+                    const originalText = submitBtn.innerHTML;
+                    
+                    submitBtn.innerHTML = '<span>Message envoyé !</span>';
+                    submitBtn.style.background = 'linear-gradient(135deg, #00ff88, #00cc66)';
+                    
+                    // Reset form after 2 seconds
+                    setTimeout(() => {
+                        contactForm.reset();
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.style.background = 'linear-gradient(135deg, #ff6b35, #ff8f5a)';
+                    }, 2000);
+                });
+            }
+        });
+    </script>
 </body>
 </html>
