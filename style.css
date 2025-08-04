@@ -101,21 +101,25 @@ body {
 
 .hero-section {
     min-height: 100vh;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
-    justify-content: center;
+    gap: 2rem;
     position: relative;
     background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
     overflow: hidden;
+    padding: 2rem;
 }
 
 /* Hero Content */
 .hero-content {
-    text-align: center;
+    grid-column: 2;
+    text-align: left;
     z-index: 10;
     position: relative;
-    max-width: 800px;
-    padding: 2rem;
+    max-width: 600px;
+    justify-self: start;
+    padding: 2rem 0;
 }
 
 .hero-title {
@@ -184,7 +188,6 @@ body {
 
 /* ===== FLOATING ELEMENTS ===== */
 .floating-element {
-    position: absolute;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -193,6 +196,7 @@ body {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     animation: float 6s ease-in-out infinite;
     z-index: 5;
+    position: relative;
 }
 
 @keyframes float {
@@ -200,10 +204,18 @@ body {
     50% { transform: translateY(-20px) rotate(1deg); }
 }
 
-/* Stats Card - Top Left */
+/* Left Column Floating Elements */
+.hero-left {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stats Card */
 .stats-card {
-    top: 15%;
-    left: 5%;
     width: 280px;
     animation-delay: 0s;
 }
@@ -255,10 +267,18 @@ body {
     border-radius: 4px 4px 0 0;
 }
 
-/* Project Card - Top Right */
+/* Right Column Floating Elements */
+.hero-right {
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Project Card */
 .project-card {
-    top: 20%;
-    right: 5%;
     width: 250px;
     animation-delay: 1s;
 }
@@ -311,10 +331,8 @@ body {
 .project-dot.trading { background: #ff6b35; }
 .project-dot.respect { background: #8b5cf6; }
 
-/* Tech Card - Bottom Left */
+/* Tech Card */
 .tech-card {
-    bottom: 25%;
-    left: 8%;
     width: 200px;
     animation-delay: 2s;
 }
@@ -342,10 +360,8 @@ body {
     color: #ff6b35;
 }
 
-/* Performance Card - Bottom Right */
+/* Performance Card */
 .performance-card {
-    bottom: 20%;
-    right: 8%;
     width: 220px;
     animation-delay: 3s;
 }
@@ -386,6 +402,58 @@ body {
 .metric-label {
     font-size: 0.75rem;
     color: #aaaaaa;
+}
+
+/* ===== RESPONSIVE HERO SECTION ===== */
+@media (max-width: 768px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 3rem;
+        min-height: auto;
+        padding: 3rem 1rem;
+    }
+    
+    .hero-left {
+        grid-column: 1;
+        grid-row: 1;
+        order: 1;
+    }
+    
+    .hero-content {
+        grid-column: 1;
+        grid-row: 2;
+        order: 2;
+        text-align: center;
+        justify-self: center;
+        max-width: 100%;
+    }
+    
+    .hero-right {
+        grid-column: 1;
+        grid-row: 3;
+        order: 3;
+    }
+    
+    .floating-element {
+        width: 100% !important;
+        max-width: 300px;
+    }
+    
+    .hero-title {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .cta-button {
+        width: 100%;
+        max-width: 250px;
+    }
 }
 
 /* ===== PILLARS SECTION ===== */
