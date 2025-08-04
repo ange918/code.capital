@@ -53,8 +53,9 @@ body {
 
 .logo {
     height: 40px;
-    width: auto;
-    filter: brightness(1.2);
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .nav-menu {
@@ -1354,8 +1355,9 @@ body {
 
 .footer-logo {
     height: 50px;
-    width: auto;
-    filter: brightness(1.2);
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .footer-tagline {
