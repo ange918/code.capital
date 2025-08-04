@@ -1,0 +1,30 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="120" rx="25" fill="rgba(139, 92, 246, 0.1)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="2"/>
+  <!-- Central respect tag -->
+  <circle cx="60" cy="60" r="35" fill="rgba(139, 92, 246, 0.1)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="2"/>
+  <text x="60" y="58" font-family="monospace" font-size="12" fill="#8b5cf6" text-anchor="middle">&lt;respect/&gt;</text>
+  <text x="60" y="70" font-family="sans-serif" font-size="8" fill="#8b5cf6" text-anchor="middle">Excellence</text>
+  
+  <!-- Values around -->
+  <circle cx="30" cy="30" r="12" fill="rgba(139, 92, 246, 0.1)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+  <text x="30" y="32" font-family="sans-serif" font-size="7" fill="#8b5cf6" text-anchor="middle">Code</text>
+  <text x="30" y="40" font-family="sans-serif" font-size="5" fill="#aaaaaa" text-anchor="middle">Quality</text>
+  
+  <circle cx="90" cy="30" r="12" fill="rgba(139, 92, 246, 0.1)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+  <text x="90" y="32" font-family="sans-serif" font-size="7" fill="#8b5cf6" text-anchor="middle">Time</text>
+  <text x="90" y="40" font-family="sans-serif" font-size="5" fill="#aaaaaa" text-anchor="middle">Deadlines</text>
+  
+  <circle cx="30" cy="90" r="12" fill="rgba(139, 92, 246, 0.1)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+  <text x="30" y="92" font-family="sans-serif" font-size="7" fill="#8b5cf6" text-anchor="middle">Client</text>
+  <text x="30" y="100" font-family="sans-serif" font-size="5" fill="#aaaaaa" text-anchor="middle">Satisfaction</text>
+  
+  <circle cx="90" cy="90" r="12" fill="rgba(139, 92, 246, 0.1)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+  <text x="90" y="92" font-family="sans-serif" font-size="7" fill="#8b5cf6" text-anchor="middle">Ethics</text>
+  <text x="90" y="100" font-family="sans-serif" font-size="5" fill="#aaaaaa" text-anchor="middle">Business</text>
+  
+  <!-- Connecting lines -->
+  <line x1="42" y1="30" x2="48" y2="40" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+  <line x1="78" y1="30" x2="72" y2="40" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+  <line x1="42" y1="90" x2="48" y2="80" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+  <line x1="78" y1="90" x2="72" y2="80" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1"/>
+</svg>

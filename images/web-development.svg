@@ -1,0 +1,27 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="120" rx="25" fill="rgba(255, 107, 53, 0.1)" stroke="rgba(255, 107, 53, 0.3)" stroke-width="2"/>
+  <!-- Browser window -->
+  <rect x="15" y="25" width="90" height="65" rx="8" fill="rgba(0, 0, 0, 0.3)" stroke="rgba(255, 107, 53, 0.5)" stroke-width="1"/>
+  <!-- Browser dots -->
+  <circle cx="25" cy="35" r="3" fill="#ff6b35"/>
+  <circle cx="35" cy="35" r="3" fill="#00ff88"/>
+  <circle cx="45" cy="35" r="3" fill="#8b5cf6"/>
+  <!-- Code lines -->
+  <rect x="20" y="45" width="35" height="3" rx="1.5" fill="#ff6b35"/>
+  <rect x="20" y="52" width="50" height="3" rx="1.5" fill="rgba(255, 255, 255, 0.6)"/>
+  <rect x="20" y="59" width="40" height="3" rx="1.5" fill="rgba(255, 255, 255, 0.4)"/>
+  <rect x="20" y="66" width="60" height="3" rx="1.5" fill="rgba(255, 255, 255, 0.3)"/>
+  <rect x="20" y="73" width="45" height="3" rx="1.5" fill="rgba(255, 255, 255, 0.2)"/>
+  <!-- Mobile preview -->
+  <rect x="70" y="45" width="25" height="35" rx="4" fill="rgba(255, 107, 53, 0.1)" stroke="rgba(255, 107, 53, 0.4)" stroke-width="1"/>
+  <rect x="73" y="48" width="19" height="2" rx="1" fill="rgba(255, 107, 53, 0.6)"/>
+  <rect x="73" y="52" width="15" height="2" rx="1" fill="rgba(255, 255, 255, 0.4)"/>
+  <rect x="73" y="56" width="17" height="2" rx="1" fill="rgba(255, 255, 255, 0.3)"/>
+  <!-- Floating elements -->
+  <circle cx="30" cy="100" r="8" fill="rgba(255, 107, 53, 0.2)" stroke="rgba(255, 107, 53, 0.5)" stroke-width="1"/>
+  <text x="30" y="105" font-family="monospace" font-size="6" fill="#ff6b35" text-anchor="middle">JS</text>
+  <circle cx="60" cy="105" r="8" fill="rgba(0, 255, 136, 0.2)" stroke="rgba(0, 255, 136, 0.5)" stroke-width="1"/>
+  <text x="60" y="110" font-family="monospace" font-size="6" fill="#00ff88" text-anchor="middle">CSS</text>
+  <circle cx="90" cy="100" r="8" fill="rgba(139, 92, 246, 0.2)" stroke="rgba(139, 92, 246, 0.5)" stroke-width="1"/>
+  <text x="90" y="105" font-family="monospace" font-size="5" fill="#8b5cf6" text-anchor="middle">HTML</text>
+</svg>
