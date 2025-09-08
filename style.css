@@ -743,11 +743,13 @@ body {
 }
 
 .pillar-features li::before {
-    content: '✓';
+    content: '';
     position: absolute;
     left: 0;
     color: #00cc6a;
     font-weight: bold;
+    font-family: 'boxicons';
+    content: '\ea10';
 }
 
 .pillar-cta {
@@ -884,10 +886,12 @@ body {
 }
 
 .service-features li::before {
-    content: '→';
+    content: '';
     position: absolute;
     left: 0;
     color: #00cc6a;
+    font-family: 'boxicons';
+    content: '\eb3d';
 }
 
 /* ===== TECHNOLOGY TAGS ===== */
@@ -1189,11 +1193,13 @@ body {
 }
 
 .value-details li::before {
-    content: '✓';
+    content: '';
     position: absolute;
     left: 0;
     color: #00cc6a;
     font-size: 0.7rem;
+    font-family: 'boxicons';
+    content: '\ea10';
 }
 
 .commitments-grid {
