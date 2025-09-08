@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="local/animation.js">
 </head>
 <body>
     <!-- Header Navigation -->
     <header class="header">
         <nav class="nav-container">
             <div class="logo-container">
-                <img src="images/logo.jpg" alt="CODE & CAPITAL Logo" class="logo">
+                <img src="images/logo.jpg" alt="CODE & CAPITAL Logo" class="logo" style="border-radius: 50%;">
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Accueil</a></li>
@@ -23,6 +24,11 @@
                 <li><a href="index.html#team" class="nav-link">Équipe</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <button class="burger-menu" id="burger-menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
         </nav>
     </header>
 
@@ -31,12 +37,12 @@
         <div class="container">
             <div class="page-header-content">
                 <div class="page-icon">
-                    <img src="images/respect-brand.svg" alt="Respect Brand" width="120" height="120">
+                    <img src="images/respect.jpg" alt="Respect Brand" width="120" height="120" style="border-radius: 15px; object-fit: cover;">
                 </div>
                 <h1 class="page-title">&lt;respect/&gt;</h1>
                 <p class="page-subtitle">
-                    Notre marque personnelle qui incarne nos valeurs fondamentales : 
-                    respect du code, respect des délais, respect des clients
+                    Cette casquette ne suit pas la tendance, elle la crée.
+                    Respect isn't requested. It's coded.
                 </p>
             </div>
         </div>
@@ -47,12 +53,35 @@
         <div class="container">
             <!-- Introduction -->
             <section class="content-section">
-                <h2>La philosophie &lt;respect/&gt;</h2>
-                <p class="lead-text">
-                    &lt;respect/&gt; n'est pas seulement une marque, c'est notre engagement 
-                    envers l'excellence et l'éthique professionnelle. Nous croyons que le 
-                    succès durable repose sur des fondations solides : le respect mutuel, 
-                    la qualité du travail et l'intégrité dans toutes nos interactions.
+                <h2>La philosophie &lt;RESPECT/&gt;</h2>
+                
+                <!-- Effet de pluie en arrière-plan -->
+                <div class="rain-container">
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                    <div class="rain-drop"></div>
+                </div>
+                
+                <p class="lead-text animated-rain-words" id="rain-text">
+                    Affirme ton style avec la snapback  &lt;RESPECT/&gt;, un design unique qui parle fort sans crier.
+                    Inspirée de l'univers du code et de la culture streetwear, cette pièce s'adresse à ceux qui comprennent que le respect se gagne, dans la rue comme dans le monde digital.
                 </p>
 
                 <div class="philosophy-grid">
@@ -252,7 +281,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="images/logo.svg" alt="CODE & CAPITAL Logo" class="footer-logo">
+                    <img src="images/logo.jpg" alt="CODE & CAPITAL Logo" class="footer-logo" style="border-radius: 50%;">
                     <p class="footer-tagline">Construire avec rigueur, tracer avec style</p>
                 </div>
                 <div class="footer-links">
@@ -267,7 +296,7 @@
                     <div class="footer-column">
                         <h4>Contact</h4>
                         <ul>
-                            <li><a href="mailto:contact@codecapital.fr">contact@codecapital.fr</a></li>
+                            <li><a href="mailto:codeandcapital.dev@proton.me">codeandcapital.dev@proton.me</a></li>
                             <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
                         </ul>
                     </div>
@@ -286,5 +315,46 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Burger menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const burgerMenu = document.getElementById('burger-menu');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (burgerMenu && navMenu) {
+                burgerMenu.addEventListener('click', function() {
+                    burgerMenu.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+                
+                // Close menu when clicking on a link
+                const navLinks = document.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        burgerMenu.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!burgerMenu.contains(event.target) && !navMenu.contains(event.target)) {
+                        burgerMenu.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    }
+                });
+            }
+
+            // Animation des mots avec effet de pluie
+            const rainText = document.getElementById('rain-text');
+            if (rainText) {
+                // Préparer le texte en mots individuels
+                const text = rainText.textContent;
+                const words = text.split(' ');
+                rainText.innerHTML = words.map(word => `<span>${word}</span>`).join(' ');
+            }
+        });
+    </script>
 </body>
 </html>
