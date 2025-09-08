@@ -5,8 +5,18 @@
     box-sizing: border-box;
 }
 
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -15,13 +25,16 @@ body {
     color: #ffffff;
     line-height: 1.6;
     overflow-x: hidden;
+    max-width: 100vw;
 }
 
 /* ===== CONTAINER & LAYOUT ===== */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* ===== HEADER & NAVIGATION ===== */
@@ -41,9 +54,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .logo-container {
@@ -515,8 +530,9 @@ body {
     
     .floating-element {
         width: 100% !important;
-        max-width: 220px;
+        max-width: min(220px, calc(100vw - 2rem));
         padding: 1rem;
+        box-sizing: border-box;
     }
     
     .stats-card {
@@ -540,17 +556,18 @@ body {
     .hero-section {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
-        gap: 2rem;
+        gap: 1rem;
         min-height: auto;
-        padding: 3rem 1rem;
+        padding: 2rem 0.5rem;
+        overflow-x: hidden;
     }
     
     .hero-left {
         grid-column: 1;
         grid-row: 1;
         order: 1;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
         gap: 1rem;
     }
     
@@ -567,15 +584,16 @@ body {
         grid-column: 1;
         grid-row: 3;
         order: 3;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
         gap: 1rem;
     }
     
     .floating-element {
         width: 100% !important;
-        max-width: 280px;
+        max-width: min(280px, calc(100vw - 2rem));
         margin: 0 auto;
+        box-sizing: border-box;
     }
     
     .hero-title {
@@ -1862,12 +1880,32 @@ body {
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 0 0.75rem;
+    }
+    
     .hero-title {
         font-size: 2rem;
     }
     
     .hero-description {
         font-size: 1rem;
+    }
+    
+    .hero-section {
+        padding: 1.5rem 0.5rem;
+        gap: 1rem;
+    }
+    
+    .floating-element {
+        max-width: calc(100vw - 1rem) !important;
+        padding: 1rem 0.75rem;
+        margin: 0 auto;
+        width: 100% !important;
+    }
+    
+    .nav-container {
+        padding: 1rem 0.75rem;
     }
     
     .page-header {
