@@ -171,7 +171,7 @@ body {
 
 .cta-button.primary:hover {
     background: #00994d;
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.1);
     box-shadow: 0 10px 30px rgba(0, 204, 106, 0.3);
 }
 
@@ -184,7 +184,7 @@ body {
 .cta-button.secondary:hover {
     border-color: #00cc6a;
     color: #00cc6a;
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.1);
 }
 
 /* ===== FLOATING ELEMENTS ===== */
@@ -198,6 +198,15 @@ body {
     animation: float 6s ease-in-out infinite;
     z-index: 5;
     position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.floating-element:hover {
+    transform: scale(1.08) translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 204, 106, 0.3);
+    animation-play-state: paused;
 }
 
 @keyframes float {
@@ -675,7 +684,7 @@ body {
 }
 
 .pillar-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.05);
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
     border-color: rgba(255, 107, 53, 0.3);
 }
@@ -754,7 +763,7 @@ body {
 
 .pillar-cta:hover {
     background: #00994d;
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 204, 106, 0.3);
 }
 
@@ -839,7 +848,7 @@ body {
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.05);
     border-color: rgba(255, 107, 53, 0.3);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
@@ -1021,7 +1030,7 @@ body {
 
 .strategy-card:hover {
     border-color: rgba(255, 107, 53, 0.3);
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.03);
 }
 
 .strategy-card h3 {
@@ -1204,7 +1213,7 @@ body {
 }
 
 .commitment-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.05);
     border-color: rgba(255, 107, 53, 0.3);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
@@ -1255,7 +1264,7 @@ body {
 
 .methodology-step:hover {
     border-color: rgba(255, 107, 53, 0.2);
-    transform: translateX(10px);
+    transform: translateX(10px) scale(1.02);
 }
 
 .step-icon {
@@ -1317,7 +1326,7 @@ body {
 .btn-primary:hover {
     background: #00994d;
     border-color: #00994d;
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.1);
     box-shadow: 0 10px 30px rgba(0, 204, 106, 0.3);
 }
 
@@ -1330,7 +1339,7 @@ body {
 .btn-secondary:hover {
     border-color: #00cc6a;
     color: #00cc6a;
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.1);
 }
 
 /* ===== FOOTER ===== */
@@ -1446,7 +1455,7 @@ body {
 }
 
 .team-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.05);
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
     border-color: rgba(255, 107, 53, 0.3);
 }
